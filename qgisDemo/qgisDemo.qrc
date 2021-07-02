@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>a.png</file>
+        <file>b.png</file>
+        <file>a4tmu-h5zms.png</file>
+        <file>Shrink.jpg</file>
+        <file>ZoomInTool_B_32.png</file>
+        <file>ZoomOutTool_B_32.png</file>
+        <file>ZoomContinuousTool32.png</file>
+        <file>qgis_zh-Hans.qm</file>
+    </qresource>
+</RCC>

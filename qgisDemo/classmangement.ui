@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>classmangement</class>
+ <widget class="QWidget" name="classmangement">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>623</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>分类设置</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="2">
+    <widget class="QComboBox" name="comboBox"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>栅格波段</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QToolButton" name="toolButton">
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLineEdit" name="lineEdit"/>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QComboBox" name="comboBox_2"/>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>分类结果存储</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>开始</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>样本信息输出</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>样本</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>分类器</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QToolButton" name="toolButton_2">
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="1">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLineEdit" name="lineEdit_3"/>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLineEdit" name="lineEdit_2"/>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="0" colspan="2">
+    <widget class="QComboBox" name="comboBox_3"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLineEdit" name="lineEdit_4"/>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLineEdit" name="lineEdit_5"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>classmangement</receiver>
+   <slot>star_classify()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>130</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>classmangement</receiver>
+   <slot>findtext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>classmangement</receiver>
+   <slot>outputtiff()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>586</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>classmangement</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>611</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>622</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_3</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>classmangement</receiver>
+   <slot>classifytype(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>808</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>star_classify()</slot>
+  <slot>findtext()</slot>
+  <slot>outputtiff()</slot>
+  <slot>classifytype(QString)</slot>
+ </slots>
+</ui>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>toolbar</class>
+ <widget class="QWidget" name="toolbar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>330</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>分类工具</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_2">
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>类别</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>400</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QComboBox" name="comboBox">
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>900</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>图像</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="selectionMode">
+        <enum>QAbstractItemView::MultiSelection</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextBrowser" name="textBrowser"/>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="3">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>清空样本</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>打开样本</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>导出样本</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>删除样本</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>开始分类</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>结果优化</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>进度显示</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>toolbar</receiver>
+   <slot>click_pushButton_2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>toolbar</receiver>
+   <slot>textchanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>469</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>toolbar</receiver>
+   <slot>click_deletButoon()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>525</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>toolbar</receiver>
+   <slot>click_outputButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>toolbar</receiver>
+   <slot>starclassification()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>toolbar</receiver>
+   <slot>opensample()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>32</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>toolbar</receiver>
+   <slot>clearsample()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>540</x>
+     <y>-56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>toolbar</receiver>
+   <slot>xuanzhong(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1251</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>toolbar</receiver>
+   <slot>hideprogress(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>click_pushButton()</slot>
+  <slot>click_pushButton_2()</slot>
+  <slot>textchanged(QString)</slot>
+  <slot>click_deletButoon()</slot>
+  <slot>click_outputButton()</slot>
+  <slot>starclassification()</slot>
+  <slot>opensample()</slot>
+  <slot>slot2()</slot>
+  <slot>clearsample()</slot>
+  <slot>xuanzhong(QModelIndex)</slot>
+  <slot>hideprogress(int)</slot>
+  <slot>pointclassify()</slot>
+ </slots>
+</ui>

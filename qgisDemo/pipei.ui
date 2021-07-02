@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pipei</class>
+ <widget class="QWidget" name="pipei">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>608</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>pipei</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="1">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>特征点坐标（图像坐标）</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="3">
+    <widget class="QComboBox" name="comboBox"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>左侧图像</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <widget class="QToolButton" name="toolButton_2">
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QLineEdit" name="lineEdit_2"/>
+   </item>
+   <item row="7" column="4">
+    <widget class="QToolButton" name="toolButton">
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="lineEdit"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>x:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>y:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="4">
+    <widget class="QToolButton" name="toolButton_3">
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_3"/>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>右侧图像</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>保存路径</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>从图像导入</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1" colspan="3">
+    <widget class="QComboBox" name="comboBox_2"/>
+   </item>
+   <item row="5" column="4">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="10" column="3">
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="4">
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QToolButton" name="toolButton_4">
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" colspan="3">
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>toolButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pipei</receiver>
+   <slot>frompicture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>716</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pipei</receiver>
+   <slot>addxy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>553</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>713</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pipei</receiver>
+   <slot>deletexy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>557</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>762</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>pipei</receiver>
+   <slot>pipeijisuan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>526</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>pipei</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>580</x>
+     <y>405</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>757</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pipei</receiver>
+   <slot>openfrom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>533</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>745</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>pipei</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>pipei</receiver>
+   <slot>openfrom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>524</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>frompicture()</slot>
+  <slot>addxy()</slot>
+  <slot>deletexy()</slot>
+  <slot>pipeijisuan()</slot>
+  <slot>openfrom()</slot>
+  <slot>save()</slot>
+ </slots>
+</ui>
